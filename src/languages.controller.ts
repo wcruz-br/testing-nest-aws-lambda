@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { Language } from './models/language';
+import { Language } from './models/language.js';
 
 @Controller('languages')
 export class LanguagesController {

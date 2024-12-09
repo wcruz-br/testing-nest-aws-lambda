@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.json", // Inherit base config
+    "compilerOptions": {
+      "module": "ES2022",          // Or 'esnext', 'node16', 'nodenext'
+      "target": "ES2022",
+      "moduleResolution": "node",
+      "outDir": "./dist-lambda" // Separate output directory for lambda.ts
+    },
+    "include": ["src/lambda.ts"],  // Compile ONLY lambda.ts with this config
+    "exclude": ["node_modules", "dist-lambda", "dist", "src/main.ts", "**/*.spec.ts", "src/**/*.spec.ts", "test", "src/*.(controller|module|service).ts"] 
+  }
+  

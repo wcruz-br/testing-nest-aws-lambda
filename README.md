@@ -1,21 +1,17 @@
 # AWS Lambda with NestJS
 
-## Installation
+## Building for AWS Lambda Function
 
 ```bash
-$ npm install
+npm run build:lambda
 ```
 
-## Running the app locally
+## Creating zip for upload
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
+./zipa.sh
 ```
 
-```
-curl http://localhost:3000/languages
-```
+Upload this zip to your lambda function and call its URL - alas!
+
+(This example was adapted from [this outdated repository](https://github.com/gemerick/nest-lambda). There is a lot of things here we don't need, I was in a hurry and just trying to prove that it works. If you clean things here, send a PR, thank you!)
